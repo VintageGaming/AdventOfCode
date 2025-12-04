@@ -1,0 +1,12 @@
+Dial: 0 - 99
+  Starts at 50
+
+Rotations: Start with L or R, followed by the distance (L68)
+  R: Add 
+  L: Subtract
+  Example: Pointing at 11: R8 = 19
+
+Password: # of Times dial points to 0 during and after any Rotation
+
+Part 1: 1102
+Part 2: 6175

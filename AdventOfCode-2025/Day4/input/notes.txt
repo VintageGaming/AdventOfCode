@@ -1,0 +1,24 @@
+
+Notes on Char[] Implementation
+
+Example Input:
+lineLength = 10
+
+example index = 15
+
+// Check above if (Index > 10)
+    To get to index 5 from index of 15 (next line, same index), Subtract lineLength
+    // Check Above left if (Index % 10 > 0)
+        To get to index 4 from index of 15, Subtract lineLength+1
+    // Check Above right if (Index % 10 < 9)
+        To get to index 6 from index of 15, Subtract lineLength-1
+
+// Check Left if (Index % 10 > 0)
+// Check Right if (Index % 10 <9)
+
+// Check below if (fileSize - Index > 10)
+    To get to index 25 from index of 15 (next line, same index), Add lineLength
+    // Check Below left if (Index % 10 > 0)
+        To get to index 24 from index of 15, Add lineLength+1
+    // Check Below right if (Index % 10 < 9)
+        To get to index 26 from index of 15, Add lineLength-1
